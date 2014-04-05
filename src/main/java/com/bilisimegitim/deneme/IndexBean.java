@@ -28,7 +28,7 @@ public class IndexBean {
         this.name = name;
     }
     
-    public void retriveFormDB(){
+    public void retrieveFormDB() {
         System.out.println("Gelen değer : " + name);
     }
     
