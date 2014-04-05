@@ -8,15 +8,30 @@ package com.bilisimegitim.deneme;
 
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
+import javax.faces.bean.ViewScoped;
 
 /**
  *
  * @author Adem
  */
-@ManagedBean
-@RequestScoped
+@ManagedBean(name="indexBean")
+@ViewScoped
 public class IndexBean {
 
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public void retriveFormDB(){
+        System.out.println("Gelen değer : " + name);
+    }
+    
     /**
      * Creates a new instance of IndexBean
      */
